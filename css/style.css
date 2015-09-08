@@ -1,0 +1,186 @@
+@font-face 
+{
+	font-family: Pier;
+	src: url("../fonts/pier-regular.otf");
+	font-weight: normal;
+}
+
+@font-face
+{
+	font-family: Pier;
+	src: url("../fonts/pier-bold.otf");
+	font-weight: bold;
+}
+
+html, body
+{
+	overflow-x: hidden;
+	max-width: 100%;
+}
+
+h1
+{
+	font-family: "Pier", serif;
+}
+
+#wrapper
+{
+}
+
+#cover-image
+{
+	position: absolute;
+	top: 0;
+	height: 970px;
+	width: 100%;
+	background-image: url("../images/mgsv.jpg");
+	background-size: cover;
+	z-index: -1;
+}
+
+#overlay
+{
+	position: absolute;
+	top: 0;
+	background-color: black;
+	height: 970px;
+	width: 100%;
+	opacity: 0.5;
+	z-index: -1;
+}
+
+header
+{
+	margin: 0 auto;
+	height: 85px;
+	width: 1170px;
+}
+
+header > nav
+{
+	float: right;
+}
+
+header > #logo
+{
+	float: left;
+}
+
+header > #logo > h1
+{
+	margin-top: 21px;
+	font-size: 58pt;
+	color: #f4f5f9;
+}
+
+.text-align
+{
+	text-align: right;
+}
+
+.text-align > ul > li
+{
+	list-style: none;
+	display: inline-block;
+	padding-left: 30px;
+	padding-right: 30px;
+	font-family: "Pier", serif;
+	font-size: 12pt;
+	margin-top: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: #f4f5f9;
+}
+
+.text-align > ul > li:hover
+{
+	cursor: pointer;
+	background-color: rgba(255, 255, 255, 0.075);
+}
+
+.text-align > ul > li.active
+{
+	color: #ff6867;
+	font-weight: bold;
+	border-bottom: 2px solid #ff6867;
+}
+
+main
+{
+	height: 503px;
+}
+
+main > form 
+{
+	margin: 325px auto;
+	width: 1170px;
+}
+
+main > form > input
+{
+	font-family: "Pier", serif;
+	border: 0;
+	background: 0;
+	font-size: 78pt;
+	width: 100%;
+	color: #f4f5f9;
+}
+
+main > form > input::-webkit-input-placeholder 
+{
+	color: rgba(150, 150, 150, 0.65);
+}
+
+main > form > input::-moz-placeholder 
+{
+	color: rgb(150, 150, 150);
+}
+
+main > form > input:-ms-input-placeholder 
+{
+	color: rgba(150, 150, 150, 0.65);
+}
+
+main > form > input:-moz-placeholder 
+{ 
+	color: rgb(150, 150, 150);
+}
+
+
+#arrow
+{
+	position: absolute;
+	bottom: -28px;
+	width: 100%;
+	padding-bottom: 1.5%;
+	background-color: #ff6867;
+}
+
+#arrow:before, #arrow:after {
+	content:'';
+	position: absolute;
+	bottom: 100%;
+	width: 50%;
+	padding-bottom:inherit;
+	background-color: inherit;
+}
+
+#arrow:before {
+	right: 50%;
+	-ms-transform-origin: 100% 100%;
+	-webkit-transform-origin: 100% 100%;
+	transform-origin: 100% 100%;
+	-ms-transform: skewX(45deg);
+	-webkit-transform: skewX(45deg);
+	transform: skewX(45deg);
+}
+
+#arrow:after {
+	left: 50%;
+	-ms-transform-origin: 0 100%;
+	-webkit-transform-origin: 0 100%;
+	transform-origin: 0 100%;
+	-ms-transform: skewX(-45deg);
+	-webkit-transform: skewX(-45deg);
+	transform: skewX(-45deg);
+}
