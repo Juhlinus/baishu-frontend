@@ -127,6 +127,11 @@ main > form > input
 	color: #f4f5f9;
 }
 
+main > form > input:focus
+{
+	outline-width: 0;
+}
+
 main > form > input::-webkit-input-placeholder 
 {
 	color: rgba(150, 150, 150, 0.65);
@@ -190,7 +195,16 @@ main > form > input:-moz-placeholder
 #content-wrapper
 {
 	margin-top: 70px;
-	background-color: #ff6867;
+
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff6867+0,cf3b5a+100 */
+	background: #ff6867; /* Old browsers */
+	background: -moz-linear-gradient(top, #ff6867 0%, #cf3b5a 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff6867), color-stop(100%,#cf3b5a)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #ff6867 0%,#cf3b5a 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #ff6867 0%,#cf3b5a 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #ff6867 0%,#cf3b5a 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #ff6867 0%,#cf3b5a 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff6867', endColorstr='#cf3b5a',GradientType=0 ); /* IE6-9 */
 }
 
 #content
