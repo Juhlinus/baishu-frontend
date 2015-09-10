@@ -1,0 +1,103 @@
+@font-face 
+{
+	font-family: Pier;
+	src: url("../fonts/pier-regular.otf");
+	font-weight: normal;
+}
+
+@font-face
+{
+	font-family: Pier;
+	src: url("../fonts/pier-bold.otf");
+	font-weight: bold;
+}
+
+html, body
+{
+	font-family: "Pier", serif;
+	background-image: url("../images/mgsv.jpg");
+	background-repeat: no-repeat;
+}
+
+h1
+{
+	color: #f4f5f9;
+	font-size: 58pt;
+	font-weight: bold;
+}
+
+ul > li
+{
+	display: inline-block;
+	list-style: none;
+	color: #f4f5f9;
+	padding: 30px;
+}
+
+form > input[type=text]
+{
+	background: 0;
+	border: 0;
+	padding: 0;
+	font-size: 78pt;
+	width: 100%;
+	height: 135px;
+	color: white;
+}
+
+form > input[type=text]:focus
+{
+	border: 0;
+}
+
+form > input[type=text]::-webkit-input-placeholder 
+{
+	color: rgba(150, 150, 150, 0.65);
+}
+
+form > input[type=text]::-moz-placeholder 
+{
+	color: rgb(150, 150, 150);
+}
+
+form > input[type=text]:-ms-input-placeholder 
+{
+	color: rgba(150, 150, 150, 0.65);
+}
+
+form > input[type=text]:-moz-placeholder 
+{ 
+	color: rgb(150, 150, 150);
+}
+
+.container
+{
+	max-width: 1170px;
+}
+
+.extend
+{
+	height: 550px;
+	margin-top: 231px;
+}
+
+#overlay
+{
+	position: absolute;
+	opacity: 0.5;
+	background-color: black;
+	height: 900px;
+	width: 100%;
+}
+
+#container-wrapper
+{
+    background: #ff6867;
+    background: -moz-linear-gradient(top, #ff6867 0%, #cf3b5a 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff6867), color-stop(100%,#cf3b5a));
+    background: -webkit-linear-gradient(top, #ff6867 0%,#cf3b5a 100%);
+    background: -o-linear-gradient(top, #ff6867 0%,#cf3b5a 100%);
+    background: -ms-linear-gradient(top, #ff6867 0%,#cf3b5a 100%);
+    background: linear-gradient(to bottom, #ff6867 0%,#cf3b5a 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff6867', endColorstr='#cf3b5a',GradientType=0 );
+}
