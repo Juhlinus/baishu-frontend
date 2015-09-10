@@ -17,13 +17,18 @@ html, body
 	font-family: "Pier", serif;
 	background-image: url("../images/mgsv.jpg");
 	background-repeat: no-repeat;
+	color: #f4f5f9;
 }
 
 h1
 {
-	color: #f4f5f9;
 	font-size: 58pt;
 	font-weight: bold;
+}
+
+h2
+{
+	font-size: 48pt;
 }
 
 ul > li
@@ -32,6 +37,19 @@ ul > li
 	list-style: none;
 	color: #f4f5f9;
 	padding: 30px;
+}
+
+ul > li:hover
+{
+	cursor: pointer;
+	background-color: rgba(255, 255, 255, 0.075);
+}
+
+ul > li.active
+{
+	color: #ff6867;
+	font-weight: bold;
+	border-bottom: 2px solid #ff6867;
 }
 
 form > input[type=text]
@@ -102,27 +120,67 @@ form > input[type=text]:-moz-placeholder
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff6867', endColorstr='#cf3b5a',GradientType=0 );
 }
 
-.arrow {
-  position: relative;
-  bottom: 0px;
-  width: 100%;
-  height: 20px;
-  background-color: #ff6867;
+#container-wrapper p
+{
+	color: #E2E2E2;
 }
-.arrow:before, .arrow:after {
-  content:'';
-  position: absolute;
-  bottom: 100%;
-  width: 50%;
-  box-sizing: border-box;
+
+#container-wrapper h1
+{
+	/* font-size:; */
 }
-.arrow:before {
-  right: 50%;
-  border-bottom: 20px solid #ff6867;
-  border-right: 20px solid transparent;
+
+.arrow 
+{
+	position: relative;
+	bottom: 0px;
+	width: 100%;
+	height: 20px;
+	background-color: #ff6867;
 }
-.arrow:after {
-  left: 50%;
-  border-bottom: 20px solid #ff6867;
-  border-left: 20px solid transparent;
+.arrow:before, .arrow:after 
+{
+	content:'';
+	position: absolute;
+	bottom: 100%;
+	width: 50%;
+	box-sizing: border-box;
+}
+.arrow:before 
+{
+	right: 50%;
+	border-bottom: 20px solid #ff6867;
+	border-right: 20px solid transparent;
+}
+.arrow:after 
+{
+	left: 50%;
+	border-bottom: 20px solid #ff6867;
+	border-left: 20px solid transparent;
+}
+
+img.poster
+{
+	height: 250px;
+	float: right;
+}
+
+.text-center
+{
+	text-align: center;
+}
+
+.green
+{
+	color: #51BF51;
+}
+
+.pinkish
+{
+	color: #FFABAB;
+}
+
+.extend-reviews
+{
+	height: 260px;
 }
