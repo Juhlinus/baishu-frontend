@@ -1,0 +1,9 @@
+html
+{
+	overflow-x: visible;
+}
+
+html, body, #wrapper, #cover-image, #overlay
+{
+	width: calc(100% + 220px);
+}
